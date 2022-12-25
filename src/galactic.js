@@ -1,3 +1,3 @@
-export default function GalacticAge() {
-
+export default function GalacticAge(age) {
+  this.age = age;
 };
