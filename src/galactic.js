@@ -41,4 +41,13 @@ export default class GalacticAge {
   futureMercuryAge() {
     return (this.yearsTilFutureAge() / 0.24).toFixed(1);
   }
+  futureVenusAge() {
+    return (this.yearsTilFutureAge() / 0.62).toFixed(1);
+  }
+  futureMarsAge() {
+    return (this.yearsTilFutureAge() / 1.88).toFixed(1);
+  }
+  futureJupiterAge() {
+    return (this.yearsTilFutureAge() / 11.86).toFixed(1);
+  }
 }
