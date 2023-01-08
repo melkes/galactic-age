@@ -44,4 +44,11 @@ describe('GalacticAge', () => {
     const futureAge = new GalacticAge(65, 54, 75);
     expect(futureAge.futureMercuryAge()).toEqual(41.7.toFixed(1));
   });
+
+  test('should correctly calculate number of years which have yet to pass until a given future birthday in Mars, Venus, Jupiter years', () => {
+    const futureAge = new GalacticAge(65, 54, 75);
+    expect(futureAge.futureVenusAge()).toEqual(16.1.toFixed(1));
+    expect(futureAge.futureMarsAge()).toEqual(5.3.toFixed(1));
+    expect(futureAge.futureJupiterAge()).toEqual(0.8.toFixed(1));
+    });
 });
