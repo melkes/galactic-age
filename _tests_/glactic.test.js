@@ -22,4 +22,10 @@ describe('GalacticAge', () => {
     expect(galacticAge.getVenusYears()).toEqual(104.8.toFixed(1));
     expect(galacticAge.getJupiterYears()).toEqual(5.5.toFixed(1));
   });
+
+  test('should determine how many years have passed since a past birthday', () => {
+  const pastAge = new GalacticAge(65, 54);
+  expect(pastAge.yearsSincePastAge()).toEqual(11);
+  });
+
 });
