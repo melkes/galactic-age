@@ -32,4 +32,11 @@ describe('GalacticAge', () => {
     const pastAge = new GalacticAge(65, 54);
     expect(pastAge.pastMarsAge()).toEqual(5.9.toFixed(1));
     });
+
+  test('should correctly calculate number of years since a past birthday in Mercury, Venus, Jupiter years', () => {
+    const pastAge = new GalacticAge(65, 54);
+    expect(pastAge.pastMercuryAge()).toEqual(45.8.toFixed(1));
+    expect(pastAge.pastVenusAge()).toEqual(17.7.toFixed(1));
+    expect(pastAge.pastJupiterAge()).toEqual(0.9.toFixed(1));
+    });
 });
