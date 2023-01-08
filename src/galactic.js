@@ -1,14 +1,15 @@
 export default class GalacticAge {
-  constructor(age, prevAge) {
+  constructor(age, prevAge, futureAge) {
     this.age = age;
     this.prevAge = prevAge;
+    this.futureAge = futureAge;
   }
 
   getMercuryYears() {
-    return (this.age / .24).toFixed(1);
+    return (this.age / 0.24).toFixed(1);
   }
   getVenusYears() {
-    return (this.age / .62).toFixed(1);
+    return (this.age / 0.62).toFixed(1);
   }
   getMarsYears() {
     return (this.age / 1.88).toFixed(1);
@@ -16,20 +17,28 @@ export default class GalacticAge {
   getJupiterYears() {
     return (this.age / 11.86).toFixed(1);
   }
+
   yearsSincePastAge() {
     return this.age - this.prevAge;
   }
-
   pastMercuryAge() {
-    return (this.yearsSincePastAge() / .24).toFixed(1);
+    return (this.yearsSincePastAge() / 0.24).toFixed(1);
   }
   pastVenusAge() {
-    return (this.yearsSincePastAge() / .62).toFixed(1);
+    return (this.yearsSincePastAge() / 0.62).toFixed(1);
   }
   pastMarsAge() {
     return (this.yearsSincePastAge() / 1.88).toFixed(1);
   }
   pastJupiterAge() {
     return (this.yearsSincePastAge() / 11.86).toFixed(1);
+  }
+
+  yearsTilFutureAge() {
+    return this.futureAge - this.age;
+  }
+  
+  futureMercuryAge() {
+    return (this.yearsTilFutureAge() / 0.24).toFixed(1);
   }
 }
