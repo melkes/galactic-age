@@ -20,8 +20,16 @@ export default class GalacticAge {
     return this.age - this.prevAge;
   }
 
+  pastMercuryAge() {
+    return (this.yearsSincePastAge() / .24).toFixed(1);
+  }
+  pastVenusAge() {
+    return (this.yearsSincePastAge() / .62).toFixed(1);
+  }
   pastMarsAge() {
     return (this.yearsSincePastAge() / 1.88).toFixed(1);
   }
-
+  pastJupiterAge() {
+    return (this.yearsSincePastAge() / 11.86).toFixed(1);
+  }
 }
