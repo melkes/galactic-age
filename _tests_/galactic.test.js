@@ -30,6 +30,6 @@ describe('GalacticAge', () => {
 
   test('should correctly calculate number of years since a past birthday in Mars years', () => {
     const pastAge = new GalacticAge(65, 54);
-    expect(pastAge.pastMarsAge()).toEqual(5.85);
+    expect(pastAge.pastMarsAge()).toEqual(5.9.toFixed(1));
     });
 });

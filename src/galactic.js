@@ -19,4 +19,9 @@ export default class GalacticAge {
   yearsSincePastAge() {
     return this.age - this.prevAge;
   }
+
+  pastMarsAge() {
+    return (this.yearsSincePastAge() / 1.88).toFixed(1);
+  }
+
 }
