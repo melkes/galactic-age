@@ -1,4 +1,4 @@
-import GalacticAge from "./../src/galactic.js";
+import GalacticAge from "../src/galactic.js";
 
 describe('GalacticAge', () => {
 
@@ -30,7 +30,6 @@ describe('GalacticAge', () => {
 
   test('should correctly calculate number of years since a past birthday in Mars years', () => {
     const pastAge = new GalacticAge(65, 54);
-    const pastMarsAge = pastAge.yearsSincePastAge();
-    expect(pastMarsAge.getMarsYears()).toEqual(5.85);
+    expect(pastAge.pastMarsAge()).toEqual(5.85);
     });
 });
