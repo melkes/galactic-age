@@ -1,6 +1,7 @@
 export default class GalacticAge {
-  constructor(age) {
+  constructor(age, prevAge) {
     this.age = age;
+    this.prevAge = prevAge;
   }
 
   getMercuryYears() {
@@ -15,5 +16,7 @@ export default class GalacticAge {
   getJupiterYears() {
     return (this.age / 11.86).toFixed(1);
   }
-
+  yearsSincePastAge() {
+    return this.age - this.prevAge;
+  }
 }
