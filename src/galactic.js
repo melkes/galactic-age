@@ -6,4 +6,5 @@ export default class GalacticAge {
   getMarsYears() {
   return (this.age / 1.88).toFixed(1);
 };
+
 }
