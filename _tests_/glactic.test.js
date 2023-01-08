@@ -14,7 +14,7 @@ describe('GalacticAge', () => {
 
   test('should correctly calculate inputted age in Mercury years', () => {
     const galacticAge = new GalacticAge(65);
-    expect(galacticAge.getMercuryYears()).toEqual(15.6.toFixed(1));
+    expect(galacticAge.getMercuryYears()).toEqual(270.8.toFixed(1));
   });
 
 });
