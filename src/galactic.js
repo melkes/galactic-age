@@ -4,5 +4,5 @@ export default function GalacticAge(age) {
 }
 
 GalacticAge.prototype.getMarsYears = function () {
-  this.marsYears = (this.age / 1.88).toFixed(1);
+  return (this.age / 1.88).toFixed(1);
 };
