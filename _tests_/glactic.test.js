@@ -17,4 +17,9 @@ describe('GalacticAge', () => {
     expect(galacticAge.getMercuryYears()).toEqual(270.8.toFixed(1));
   });
 
+  test('should correctly calculate inputted age in Venus or Jupiter years', () => {
+    const galacticAge = new GalacticAge(65);
+    expect(galacticAge.getVenusYears()).toEqual(104.8.toFixed(1));
+    expect(galacticAge.getJupiterYears()).toEqual(5.5.toFixed(1));
+  });
 });
