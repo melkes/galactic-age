@@ -23,7 +23,7 @@
 * In a terminal window, run:
   * `npm install`
   * `npm build`
-  * `npm start`
+  * `npm run test`, to run the Jest tests in `galactic.test.js` and the results will be displayed in the terminal window
 
 ## Roadmap
 ### Future development would include:

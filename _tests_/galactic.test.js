@@ -3,8 +3,8 @@ import GalacticAge from "../src/galactic.js";
 describe('GalacticAge', () => {
 
   test('should create an object with an inputted age',() => {
-  const galacticAge = new GalacticAge(65);
-  expect(galacticAge.age).toEqual(65);
+    const galacticAge = new GalacticAge(65);
+    expect(galacticAge.age).toEqual(65);
   });
 
   test('should correctly calculate inputted age in Mars years', () => {
@@ -24,21 +24,21 @@ describe('GalacticAge', () => {
   });
 
   test('should determine how many years have passed since a past birthday', () => {
-  const pastAge = new GalacticAge(65, 54);
-  expect(pastAge.yearsSincePastAge()).toEqual(11);
+    const pastAge = new GalacticAge(65, 54);
+    expect(pastAge.yearsSincePastAge()).toEqual(11);
   });
 
   test('should correctly calculate number of years since a past birthday in Mars years', () => {
     const pastAge = new GalacticAge(65, 54);
     expect(pastAge.pastMarsAge()).toEqual(5.9.toFixed(1));
-    });
+  });
 
   test('should correctly calculate number of years since a past birthday in Mercury, Venus, Jupiter years', () => {
     const pastAge = new GalacticAge(65, 54);
     expect(pastAge.pastMercuryAge()).toEqual(45.8.toFixed(1));
     expect(pastAge.pastVenusAge()).toEqual(17.7.toFixed(1));
     expect(pastAge.pastJupiterAge()).toEqual(0.9.toFixed(1));
-    });
+  });
 
   test('should correctly calculate number of years which have yet to pass until a given future birthday in Mercury years', () => {
     const futureAge = new GalacticAge(65, 54, 75);
@@ -50,5 +50,5 @@ describe('GalacticAge', () => {
     expect(futureAge.futureVenusAge()).toEqual(16.1.toFixed(1));
     expect(futureAge.futureMarsAge()).toEqual(5.3.toFixed(1));
     expect(futureAge.futureJupiterAge()).toEqual(0.8.toFixed(1));
-    });
+  });
 });
