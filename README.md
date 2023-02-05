@@ -9,8 +9,6 @@
 ## Technologies Used
 
 * Git
-* HTML
-* CSS/Bootstrap
 * Javascript
 * npm
 * Webpack
@@ -22,7 +20,7 @@
 * Open the directory in VS Code
 * In a terminal window, run:
   * `npm install`
-  * `npm build`
+  * `npm run build`
   * `npm run test`, to run the Jest tests in `galactic.test.js` and the results will be displayed in the terminal window
 
 ## Roadmap
